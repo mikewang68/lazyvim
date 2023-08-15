@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
+
+vim.g.user_emmet_leader_key = ","
