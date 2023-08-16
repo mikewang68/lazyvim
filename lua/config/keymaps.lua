@@ -2,6 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
+local keymap = vim.keymap
+
+keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
 
 vim.g.user_emmet_leader_key = ","
