@@ -4,14 +4,15 @@
 
 local keymap = vim.keymap
 
+keymap.set("i", "ii", "<Esc>")
 keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
 
-keymap.set("n", "<leader>r", ":RunCode<CR><CR>")
-keymap.set("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
-keymap.set("n", "<leader>rft", ":RunFile tab<CR>", { noremap = true, silent = false })
-keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
-keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
-keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
-keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>r", ":RunCode<CR>")
+-- keymap.set("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
+-- keymap.set("n", "<leader>rft", ":RunFile tab<CR>", { noremap = true, silent = false })
+-- keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
+-- keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
+-- keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
+-- keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
 
 vim.g.user_emmet_leader_key = ","
