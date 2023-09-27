@@ -6,6 +6,10 @@ local keymap = vim.keymap
 
 keymap.set("i", "ii", "<Esc>")
 keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
+keymap.set({ "i", "c" }, "<C-v>", "<C-r>+")
+keymap.set("v", "<C-v>", '"+p')
+keymap.set("t", "<C-v>", '<C-\\><C-n>"+pa')
+keymap.set("v", "<C-c>", '"+y')
 
 keymap.set("n", "<leader>r", ":RunCode<CR>")
 -- keymap.set("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
