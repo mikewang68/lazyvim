@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore
@@ -21,6 +22,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.dap.nlua" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
+    { import = "lazyvim.plugins.extras.dap.nlua" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -51,3 +53,7 @@ require("lazy").setup({
     },
   },
 })
+
+require("dap-python").resolve_python = function()
+  return "/usr/bin/python"
+end

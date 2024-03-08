@@ -7,7 +7,7 @@ vim.g.user_emmet_leader_key = ","
 local keymap = vim.keymap
 
 keymap.set("i", "ii", "<Esc>")
-keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
+-- keymap.set("n", "<leader>t", ":TagbarToggle<cr>")
 keymap.set({ "i", "c" }, "<C-v>", "<C-r>+")
 keymap.set("v", "<C-v>", '"+p')
 keymap.set("t", "<C-v>", '<C-\\><C-n>"+pa')

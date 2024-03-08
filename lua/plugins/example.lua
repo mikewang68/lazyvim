@@ -72,7 +72,7 @@ return {
     },
   },
 
-  -- add telescope-fzf-native
+  -- add telescopThread stopped due to exception of type ModuleNotFoundError (unhandled) nvim-dap e-fzf-native
   {
     "telescope.nvim",
     dependencies = {
