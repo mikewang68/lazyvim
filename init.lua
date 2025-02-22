@@ -1,0 +1,28 @@
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+
+-- require("code_runner").setup({
+--   filetype = {
+--     java = {
+--       "cd $dir &&",
+--       "javac $fileName &&",
+--       "java $fileNameWithoutExt",
+--     },
+--     python = "python3 -u",
+--     typescript = "deno run",
+--     rust = {
+--       "cd $dir &&",
+--       "rustc $fileName &&",
+--       "$dir/$fileNameWithoutExt",
+--     },
+--     go = {
+--       "echo 'hello world'",
+--       "cd $dir &&",
+--       "go run %",
+--       -- "go run $fileName",
+--       -- "go run $dir/main.go",
+--       -- "go run $fileName &&",
+--       -- "$dir/$fileNameWithoutExt",
+--     },
+--   },
+-- })
